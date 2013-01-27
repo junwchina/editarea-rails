@@ -19,17 +19,19 @@ Or install it yourself as:
 
 ## Usage
 
+add to application.js
+
     //= require edit_area_full
 
-    view code
+view code:
 
     .row-fluid 
       .span12.content_unit.section
         %form
-        %textarea#textarea{:name => "content", :style => "width:100%", :rows => 15}
-        define_method :name, &block
+          %textarea#textarea{:name => "content", :style => "width:100%", :rows => 15}
+            define_method :name, &block
 
-    javascript code
+javascript code:
 
     :javascript 
       editAreaLoader.init({
