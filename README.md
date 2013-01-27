@@ -21,6 +21,27 @@ Or install it yourself as:
 
     //= require edit_area_full
 
+    view code
+
+    .row-fluid 
+      .span12.content_unit.section
+        %form
+        %textarea#textarea{:name => "content", :style => "width:100%", :rows => 15}
+        define_method :name, &block
+
+    javascript code
+
+    :javascript 
+      editAreaLoader.init({
+        id : "textarea"   // textarea id
+        ,syntax: "ruby"      // syntax to be uses for highgliting
+        ,start_highlight: true    // to display with highlight mode on start-up
+        ,show_line_colors: true 
+        ,replace_tab_by_spaces: 4
+        ,allow_toggle: false
+      });
+    
+
 
 ## Contributing
 
