@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["elexjun@gmail.com"]
   gem.description   = %q{Editarea Gem}
   gem.summary       = %q{Editarea Gem}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/junwchina/editarea-rails"
 
   gem.files         = Dir["{lib,vendor}/**/*"] + ["LICENSE.txt", "README.md"]
   gem.require_paths = ["lib"]
