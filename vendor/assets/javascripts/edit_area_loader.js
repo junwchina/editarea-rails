@@ -236,6 +236,7 @@ EditAreaLoader.prototype ={
 				s["plugins"].splice(i,1);
 		}
 	//	alert(settings["plugins"].length+": "+ settings["plugins"].join(","));
+		if(typeof(s.baseURL) != 'undefined') t.baseURL = s.baseURL;
 		t.get_template();
 		t.load_script(t.baseURL + "langs/"+ s["language"] + ".js");
 		
