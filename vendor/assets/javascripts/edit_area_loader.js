@@ -238,6 +238,7 @@ EditAreaLoader.prototype ={
 		}
 	//	alert(settings["plugins"].length+": "+ settings["plugins"].join(","));
 		if(typeof(s.baseURL) != 'undefined') t.baseURL = s.baseURL;
+		if(typeof(s.imgPath) != 'undefined') t.imgPath = s.imgPath;
 		t.get_template();
 		t.load_script(t.baseURL + "langs/"+ s["language"] + ".js");
 		
@@ -384,6 +385,7 @@ EditAreaLoader.prototype ={
 		
 		// create template
 		template= t.template.replace(/\[__BASEURL__\]/g, t.baseURL);
+		template= t.template.replace(/\[__IMGPATH__\]/g, t.imgPath);
 		template= template.replace("[__TOOLBAR__]",html_toolbar_content);
 			
 		
