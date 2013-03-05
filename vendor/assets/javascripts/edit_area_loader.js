@@ -13,8 +13,8 @@ function EditAreaLoader(){
 	t.start_time=date.getTime();
 	t.win= "loading";	// window loading state
 	t.error= false;	// to know if load is interrrupt
-	t.baseURL="";
-	t.imgPath="images/";
+	t.baseURL="/assets/";
+	t.imgPath="";
 	//t.suffix="";
 	t.template="";
 	t.lang= {};	// array of loaded speech language
