@@ -35,12 +35,14 @@ javascript code:
 
     :javascript 
       editAreaLoader.init({
-        id : "textarea"   // textarea id
-        ,syntax: "ruby"      // syntax to be uses for highgliting
-        ,start_highlight: true    // to display with highlight mode on start-up
-        ,show_line_colors: true 
-        ,replace_tab_by_spaces: 4
-        ,allow_toggle: false
+        id: "textarea",          // textarea id
+        baseURL: "/assets/",     // defaults to ""
+        imgPath: "",             // path to image assets, defaults to 'images/'
+        syntax: "ruby",          // syntax to be uses for highgliting
+        start_highlight: true,   // to display with highlight mode on start-up
+        show_line_colors: true, 
+        replace_tab_by_spaces: 4,
+        allow_toggle: false
       });
     
 
