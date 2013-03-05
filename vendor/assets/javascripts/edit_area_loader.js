@@ -13,7 +13,7 @@ function EditAreaLoader(){
 	t.start_time=date.getTime();
 	t.win= "loading";	// window loading state
 	t.error= false;	// to know if load is interrrupt
-	t.baseURL="/assets/";
+	t.baseURL="/assets";
 	t.imgPath="";
 	//t.suffix="";
 	t.template="";
@@ -216,6 +216,7 @@ EditAreaLoader.prototype ={
 			t.delete_instance(s["id"]);
 	
 		// init settings
+
 		for(i in t.default_settings){
 			if(typeof(s[i])=="undefined")
 				s[i]=t.default_settings[i];
