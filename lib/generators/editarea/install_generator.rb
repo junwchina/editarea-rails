@@ -13,8 +13,6 @@ module Editarea
       else
         copy_file "application.js", js_manifest
       end
-
-      css_manifest = 'app/assets/stylesheets/application.css'
     end
 
 
