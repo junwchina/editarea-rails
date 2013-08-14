@@ -19,9 +19,9 @@ Or install it yourself as:
 
 ## Usage
 
-add to application.js
+add to application.js and copy static files
 
-    //= require edit_area_full
+    $ rails generate editarea:install 
 
 view code:
 
