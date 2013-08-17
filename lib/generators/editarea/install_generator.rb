@@ -5,7 +5,7 @@ module Editarea
     desc "Copy static files and add js to application.js"
     source_root File.expand_path('../templates', __FILE__)
 
-    def add_js 
+    def add_js
       js_manifest = 'app/assets/javascripts/application.js'
 
       if File.exist?(js_manifest)
@@ -16,8 +16,8 @@ module Editarea
     end
 
 
-    def copy_assets 
-      directory File.expand_path("../../../../vendor/assets", __FILE__), "public/assets"
+    def copy_assets
+      directory File.expand_path("../../../../app/assets", __FILE__), "public/assets"
     end
   end
 end
