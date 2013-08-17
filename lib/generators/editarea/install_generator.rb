@@ -17,7 +17,7 @@ module Editarea
 
 
     def copy_assets
-      directory File.expand_path("../../../../app/assets", __FILE__), "app/assets"
+      directory File.expand_path("../../../../app/assets", __FILE__), "public/assets"
     end
   end
 end
